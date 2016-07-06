@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>layout</title>
+</head>
+<body>
+  <style>
+    div{
+      min-height: 200px;
+    }
+    #container-1 #left{
+      background: red;
+      float: left;
+      width: 200px;
+
+    }
+    #container-1 #right{
+      margin-left: 200px;
+      background: green;
+    }
+
+    #container-1 #left,
+    #container-1 #right{
+      height: auto !important;
+      height: 200px;
+    }
+    #container-2 #left{
+      background: red;
+      float: left;
+      width: 200px;
+      margin-right: -100%;
+    }
+    #container-2 #right{
+      float: left;
+      width: 100%;
+    }
+    #container-2 #right-inner{
+      margin-left: 200px;
+      background: green;
+    }
+
+
+  </style>
+  <div id="container-1">
+    <div id="left"></div>
+    <div id="right">et, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </div>
+  </div>
+  <hr>
+  <div id="container-2">
+    <div id="left"></div>
+    <div id="right">
+      <div id="right-inner"></div>
+    </div>
+  </div>
+
+</body>
+</html>
